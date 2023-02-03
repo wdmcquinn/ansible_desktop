@@ -27,6 +27,12 @@
       method: user
       state: present
       remote: flathub
+  
+  - name: set theme
+    become_user: wdmcquinn
+    dconf:
+      key: "org/gnome/desktop/interface/color-scheme"
+      value: "'prefer-dark'"
 
   - name: set wallpaper
     become_user: wdmcquinn
