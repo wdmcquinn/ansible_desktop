@@ -23,10 +23,10 @@
   - name: install flatpaks
     become_user: wdmcquinn
     flatpak:
-      name: flathub com.ultimaker.cura
+      name: com.ultimaker.cura
       method: user
       state: present
-
+      remote: flathub
   - name: set wallpaper
     become_user: wdmcquinn
     dconf:
