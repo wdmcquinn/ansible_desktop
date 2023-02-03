@@ -23,7 +23,7 @@
   - name: install flatpaks
     become_user: wdmcquinn
     flatpak:
-      name: flathub com.ultimake.cura
+      name: flathub com.ultimaker.cura
       method: user
       state: present
 
