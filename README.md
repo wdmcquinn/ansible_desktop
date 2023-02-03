@@ -1,2 +1,3 @@
 # ansible_desktop
-Ansible Config for desktops and laptops
+Ansible Configuration for desktops and laptops
+
