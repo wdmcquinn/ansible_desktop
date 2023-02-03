@@ -4,6 +4,10 @@
   become: true
 
   tasks:
-  - name: install htop
+  - name: install base utils
     package:
-      name: htop
+      name:
+        - htop
+        - tmux
+        - screen
+        - nmap
