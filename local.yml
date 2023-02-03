@@ -11,3 +11,11 @@
         - tmux
         - screen
         - nmap
+        - gnome-tweaks
+
+  - name: set wallpaper
+    dconf:
+      key: "/org/gnome/desktop/backgrounds/picture-uri"
+      value: "'file:///usr/share/backgrounds/pop/nick-nazzaro-underwater.png'"
+
+
