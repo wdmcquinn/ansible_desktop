@@ -3,6 +3,9 @@
   connection: local
   become: true
 
+  roles:
+    - workstation
+    
   tasks:
   - name: install base utils
     package:
