@@ -14,6 +14,15 @@
         - gnome-tweaks
         - python3-psutil
         - python3-pip
+        - code
+        - steam-installer
+
+  - name: install flatpaks
+    become_user: wdmcquinn
+    flatpak:
+      name: flathub com.ultimake.cura
+      method: user
+      state: present
 
   - name: set wallpaper
     become_user: wdmcquinn
