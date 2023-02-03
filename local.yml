@@ -12,7 +12,8 @@
         - screen
         - nmap
         - gnome-tweaks
-        - python-psutil
+        - python3-psutil
+        - python3-pip
 
   - name: set wallpaper
     dconf:
