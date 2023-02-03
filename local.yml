@@ -16,6 +16,7 @@
         - python3-pip
 
   - name: set wallpaper
+    become_user: wdmcquinn
     dconf:
       key: "/org/gnome/desktop/backgrounds/picture-uri-dark"
       value: "'file:///usr/share/backgrounds/pop/nick-nazzaro-underwater.png'"
