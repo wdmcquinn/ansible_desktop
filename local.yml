@@ -21,5 +21,23 @@
       key: "/org/gnome/desktop/background/picture-uri-dark"
       value: "'file:///usr/share/backgrounds/pop/nick-nazzaro-underwater.png'"
 
+  - name: add ansible user
+    user:
+      name: velociraptor
+      system: yes
 
+  - name: setup sudo for ansible user
+    copy:
+      src: files/sudoer_velociraptor
+      dest: /etc/sudoers.d/velociraptor
+      owner: root
+      group: root
+      mode: 0440
+
+  - name: add ansible-pull cron job
+    cron:
+      name: ansible auto-provision
+      user: velociraptor
+      minute: "*/10"
+      job: ansible-pull -o -U https://github.com/wdmcquinn/ansible_desktop.git
 
