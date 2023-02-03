@@ -17,7 +17,7 @@
 
   - name: set wallpaper
     dconf:
-      key: "/org/gnome/desktop/backgrounds/picture-uri"
+      key: "/org/gnome/desktop/backgrounds/picture-uri-dark"
       value: "'file:///usr/share/backgrounds/pop/nick-nazzaro-underwater.png'"
 
 
