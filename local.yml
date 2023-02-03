@@ -41,16 +41,19 @@
       value: 'true'
 
   - name: Disable screen lock
+    become_user: wdmcquinn
     dconf:
       key: '/org/gnome/desktop/screensaver/lock-enabled'
       value: 'false'
 
   - name: Disable automatic sleep
+    become_user: wdmcquinn
     dconf:
       key: '/org/gnome/settings-daemon/plugins/power/sleep-inactive-ac-type'
       value: "'nothing'"
 
   - name: Set favorite apps if not set
+    become_user: wdmcquinn
     dconf:
       key: '/org/gnome/shell/favorite-apps'
       value: "['google-chrome.desktop', 'org.gnome.Nautilus.desktop', 'org.gnome.Terminal.desktop']"
