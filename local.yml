@@ -28,7 +28,7 @@
       state: present
       remote: flathub
   
-  - name: set theme
+  - name: set dark mode
     become_user: wdmcquinn
     dconf:
       key: "/org/gnome/desktop/interface/color-scheme"
