@@ -22,12 +22,9 @@
 
   - name: install flatpaks
     become_user: wdmcquinn
-    flatpak:
-      name:
-        - com.ultimaker.cura
-        - org.remmina.Remmina.Locale
+    community.general.flatpak:
+      name: com.ultimaker.cura
       method: user
-      state: present
       remote: flathub
 
   - name: set dark mode
@@ -51,13 +48,13 @@
   - name: set dash-to-dock preferences
     become_user: wdmcquinn
     dconf:
-      key: "org/gnome/shell/extensions/dash-to-dock"
+      key: "/org/gnome/shell/extensions/dash-to-dock"
       value: "dash-max-icon-size=60"
 
   - name: set dash-to-dock preferences
     become_user: wdmcquinn
     dconf:
-      key: "org/gnome/shell/extensions/dash-to-dock"
+      key: "/org/gnome/shell/extensions/dash-to-dock"
       value: "intellihide=true"
 
   - name: set wallpaper
