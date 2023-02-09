@@ -23,11 +23,13 @@
   - name: install flatpaks
     become_user: wdmcquinn
     flatpak:
-      name: com.ultimaker.cura
+      name:
+        - com.ultimaker.cura
+        - org.remmina.Remmina
       method: user
       state: present
       remote: flathub
-  
+
   - name: set dark mode
     become_user: wdmcquinn
     dconf:
