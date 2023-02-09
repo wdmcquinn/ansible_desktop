@@ -25,7 +25,7 @@
     flatpak:
       name:
         - com.ultimaker.cura
-        - org.remmina.Remmina
+        - org.remmina.Remmina.Locale
       method: user
       state: present
       remote: flathub
