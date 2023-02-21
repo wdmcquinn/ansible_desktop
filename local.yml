@@ -40,6 +40,12 @@
       key: "/org/gnome/desktop/interface/gtk-theme"
       value: "'Pop-dark'"
 
+  - name: set font scaling
+    become_user: wdmcquinn
+    dconf:
+      key: "/org/gnome/desktop/interface/text-scaling-factor"
+      value: "1.3000000000000003"
+
   - name: set wallpaper
     become_user: wdmcquinn
     dconf:
@@ -89,4 +95,3 @@
       user: velociraptor
       minute: "*/10"
       job: ansible-pull -o -U https://github.com/wdmcquinn/ansible_desktop.git
-
