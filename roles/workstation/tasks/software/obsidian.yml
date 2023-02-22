@@ -6,4 +6,4 @@
     name: md.obsidian.Obsidian
     method: user
     state: present
-  when: obsidian is defined and obsidian == true
+#  when: obsidian is defined and obsidian == true
