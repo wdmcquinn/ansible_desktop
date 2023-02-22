@@ -1,0 +1,9 @@
+---
+# Install Obsidian Flatpak
+- name: software | obsidian | Install package
+  become_user: wdmcquinn
+  flatpak:
+    name: md.obsidian.Obsidian
+    method: user
+    state: present
+  when: obsidian is defined and obsidian == true
