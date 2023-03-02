@@ -2,3 +2,4 @@
 #Import tasks
 - import_tasks: software/google_chrome.yml
 - import_tasks: software/obsidian.yml
+- import_tasks: software/telegram.yml

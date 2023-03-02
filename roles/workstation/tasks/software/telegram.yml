@@ -1,0 +1,9 @@
+---
+# Install Telegram Flatpak
+- name: software | telegram | Install package
+  become_user: wdmcquinn
+  flatpak:
+    name: org.telegram.desktop
+    method: user
+    state: present
+  when: telegram is defined and telegram == true
