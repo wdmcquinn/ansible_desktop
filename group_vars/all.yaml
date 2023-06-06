@@ -1,3 +1,9 @@
 ---
 
 telegram: true
+obsidian: true
+vscode: true
+steam: true
+
+tailscale_up_skip: true
+
