@@ -1,0 +1,9 @@
+---
+# Install Telegram Flatpak
+- name: software | vscode | Install package
+  become_user: wdmcquinn
+  flatpak:
+    name: com.visualstudio.code
+    method: user
+    state: present
+  when: vscode is defined and vscode == true

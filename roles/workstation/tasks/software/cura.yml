@@ -1,0 +1,7 @@
+- name: install flatpaks
+  become_user: wdmcquinn
+  flatpak:
+    name: com.ultimaker.cura
+    method: user
+    state: present
+    remote: flathub

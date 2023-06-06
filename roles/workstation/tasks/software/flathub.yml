@@ -1,0 +1,7 @@
+- name: add the flathub repo
+  become_user: wdmcquinn
+  community.general.flatpak_remote:
+    name: flathub
+    state: present
+    flatpakrepo_url: https://flathub.org/repo/flathub.flatpakrepo
+    method: user
