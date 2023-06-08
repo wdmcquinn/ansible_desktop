@@ -65,6 +65,12 @@
   - name: setup docker autohide
     become_user: wdmcquinn
     dconf:
+      key: "/org/gnome/shell/extensions/dash-to-dock/dock-fixed"
+      value: "false"
+  
+  - name: setup docker autohide
+    become_user: wdmcquinn
+    dconf:
       key: "/org/gnome/shell/extensions/dash-to-dock/manualhide"
       value: "false"
   
