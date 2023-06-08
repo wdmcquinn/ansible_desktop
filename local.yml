@@ -19,6 +19,7 @@
         - python3-pip
         - code
         - steam-installer
+ 
   - name: set dark mode
     become_user: wdmcquinn
     dconf:
