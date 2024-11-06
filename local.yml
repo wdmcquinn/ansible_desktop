@@ -5,7 +5,7 @@
 
   roles:
     - workstation
-    - artis3n.tailscale
+#    - artis3n.tailscale
   tasks:
   - name: install base utils
     package:
