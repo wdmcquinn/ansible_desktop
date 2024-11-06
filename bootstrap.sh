@@ -5,8 +5,5 @@ sudo apt update -qq
 sudo apt install ansible git flatpak -y
 
 
-## Install ansible roles from galaxy
-ansible-galaxy install artis3n.tailscale
-
 
 
