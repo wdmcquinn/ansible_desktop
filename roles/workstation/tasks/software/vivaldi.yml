@@ -1,0 +1,9 @@
+---
+# Install Vivaldi
+- name: software | vivaldi | Install package
+  become_user: wdmcquinn
+  flatpak:
+    name: com.vivaldi.Vivaldi
+    method: user
+    state: present
+

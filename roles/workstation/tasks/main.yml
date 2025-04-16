@@ -1,6 +1,8 @@
 ---
 #Import tasks
 - import_tasks: software/google_chrome.yml
+- import_tasks: software/vivaldi.yml
+
 #- import_tasks: software/vscode.yml
 #- import_tasks: software/flathub.yml
 #- import_tasks: software/obsidian.yml
