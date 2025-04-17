@@ -1,0 +1,8 @@
+---
+# Install flatpaks
+- name: software | flatpaks
+  become_user: wdmcquinn
+  flatpak:
+    name: com.vivaldi.Vivaldi
+    name: com.bambulab.BambuStudio
+    name: org.telegram.desktop

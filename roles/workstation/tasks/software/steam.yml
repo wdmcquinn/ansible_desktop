@@ -1,9 +1,0 @@
----
-# Install Telegram Flatpak
-- name: software | steam | Install package
-  become_user: wdmcquinn
-  flatpak:
-    name: com.valvesoftware.Steam
-    method: user
-    state: present
-  when: steam is defined and steam == true

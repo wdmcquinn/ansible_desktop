@@ -1,11 +1,7 @@
 ---
 #Import tasks
 - import_tasks: software/google_chrome.yml
-- import_tasks: software/vivaldi.yml
 
-#- import_tasks: software/vscode.yml
-#- import_tasks: software/flathub.yml
-#- import_tasks: software/obsidian.yml
-#- import_tasks: software/telegram.yml
-#- import_tasks: software/cura.yml
-#- import_tasks: software/steam.yml
+
+# Install Flatpaks
+- import_tasks: software/flatpaks.yml
