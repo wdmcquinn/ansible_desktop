@@ -3,6 +3,9 @@
 - name: software | flatpaks
   become_user: wdmcquinn
   flatpak:
-    name: com.vivaldi.Vivaldi
-    name: com.bambulab.BambuStudio
-    name: org.telegram.desktop
+    name:
+      - com.vivaldi.Vivaldi
+      - com.bambulab.BambuStudio
+      - org.telegram.desktop
+    remote: flathub
+    method: user
