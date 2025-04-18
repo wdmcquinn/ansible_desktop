@@ -7,5 +7,6 @@
       - com.vivaldi.Vivaldi
       - com.bambulab.BambuStudio
       - org.telegram.desktop
+      - com.ultimaker.cura
     remote: flathub
     method: user
