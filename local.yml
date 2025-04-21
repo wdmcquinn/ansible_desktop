@@ -16,6 +16,8 @@
         - tmux
         - screen
         - nmap
+        - steam-installer
+        
  
   - name: add ansible user
     user:

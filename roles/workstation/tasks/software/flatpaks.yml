@@ -8,5 +8,6 @@
       - com.bambulab.BambuStudio
       - org.telegram.desktop
       - com.ultimaker.cura
+      - com.vysp3r.ProtonPlus
     remote: flathub
     method: user
