@@ -5,7 +5,9 @@
 
   roles:
     - workstation
-#    - artis3n.tailscale
+    - role: artis3n.tailscale.machine
+      vars:
+        tailscale_up_skip: true
   tasks:
   - name: install base utils
     package:
