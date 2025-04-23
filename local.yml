@@ -17,8 +17,9 @@
         - screen
         - nmap
         - steam-installer
-        
- 
+        - remmina
+        - code
+  
   - name: add ansible user
     user:
       name: ansible_adm

@@ -9,5 +9,7 @@
       - org.telegram.desktop
       - com.ultimaker.cura
       - com.vysp3r.ProtonPlus
+      - com.vscodium.codium
+
     remote: flathub
     method: user
